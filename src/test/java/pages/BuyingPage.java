@@ -12,7 +12,6 @@ public class BuyingPage extends Common{
     ProductData productData = new ProductData();
 
     public void getInShopOffice(){
-        sleep(1500);
         SelenideElement radioButtonsBlock =  $(By.className("menu"));
         ElementsCollection elements = radioButtonsBlock.$$(By.className("for-radio"));
         SelenideElement element = elements.get(1);
@@ -20,7 +19,6 @@ public class BuyingPage extends Common{
         radioButton.setSelected(true);
     }
     public void chooseShop(){
-        sleep(2000);
         ElementsCollection elements = $$(By.name("pickup_point_id"));
         SelenideElement element = elements.get(1);
         element.setSelected(true);
@@ -34,7 +32,6 @@ public class BuyingPage extends Common{
         validate(lastPrice, productData.getPrice());
     }
     public void chooseWithCash(){
-        sleep(1500);
         SelenideElement element = $(By.id("payment_unused_22"));
         element.setSelected(true);
     }
