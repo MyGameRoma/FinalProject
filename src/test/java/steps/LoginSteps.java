@@ -13,7 +13,6 @@ import static com.codeborne.selenide.Selenide.*;
 
 public class LoginSteps extends Common {
 
-
     HomePage homePage = new HomePage();
     LoginPage loginPage = new LoginPage();
 
@@ -22,15 +21,18 @@ public class LoginSteps extends Common {
         Configuration.startMaximized = true;
     }
 
+
     @When("^I open (.*)$")
     public void iOpenOneA(String url) {
         open(url);
     }
 
+
     @Then("^I compare title is he (.*)$")
     public void iCompareTitleIsHe(String title) {
         homePage.compareTitle(title);
     }
+
 
     @And("I login to my profile")
     public void iLoginToMyProfile() {
