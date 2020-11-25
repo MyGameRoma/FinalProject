@@ -9,8 +9,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         tags = "@SmokeTest",
         features = "src/test/resources",
-        glue = "java"
+        glue = "steps"
 )
 public class TestRunner {
 }
-

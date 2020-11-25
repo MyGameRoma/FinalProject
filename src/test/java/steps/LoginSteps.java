@@ -47,6 +47,4 @@ public class LoginSteps extends Common {
         sleep(10000);
         closeWebDriver();
     }
-
-
 }
